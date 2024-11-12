@@ -73,7 +73,8 @@ class TomorrowView(APIView):
                             is_sunny = True
 
                 except Exception as e:
-                    print(f"Error row skipped: {e}") # log the errors
+                    # log the errors
+                    print(f"Error row skipped: {e}")
                     continue
 
         return Response(
